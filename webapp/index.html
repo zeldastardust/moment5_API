@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Admin</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-center m-3">Kurser</h1>
+    </header>
+
+    <div class="container">
+
+    <section id="Coursesection" class="m-2">
+        
+    
+    <table class="table table-hover table">
+        <thead class="table-head">
+          <tr>
+            
+            <th>Kod</th>
+            <th>Namn</th>
+            <th>Progression</th>
+            <th>Syllabus</th>
+            <th>Ändra</th>
+            <th>Radera</th>
+          </tr>
+        </thead>
+        <tbody id="course">
+        </tbody>       
+      </table>
+      <div id="updateCourse-form"></div> 
+    </section><!--end of worksection-->
+    <div class="m-5">
+        <div class=" p-5">
+        <h2>Lägg till kurs</h2>
+        <form class="addCourseform">
+            <div class="form-group">
+            <label for="code">Kurskod</label>
+            <input type="text" class="form-control" name="inputCode" id="code">
+            </div>
+            <div class="form-group">
+            <label for="title">Kursnamn</label>
+            <input type="text" class="form-control" name="name" id="name">
+        </div>
+        <div class="form-group">
+            <label for="progression">Progression</label>
+            <input type="text" class="form-control" name="progression" id="progression">
+            </div>
+            <div class="form-group">
+            <label for="syllabus">Syllabus</label>
+            <input type="text" class="form-control" name="syllabus" id="syllabus">
+            
+            <button type="submit" class="btn btn-primary" id="addCourse">Lägg till Kurs</button>
+        </div>
+        </form>
+    </div>
+    </div>
+</div><!--end of container-->
+</body>
+<script src="main.js"></script>
+</html>
